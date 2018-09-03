@@ -2,10 +2,11 @@ page 123456702 "CSD Seminar List"
 // Lab 5.2
 // Task 5
 {
+    Caption = 'Seminar List';
     PageType = List;
     SourceTable = "CSD Seminar";
-    caption = 'Seminars';
     Editable = false;
+    CardPageId = 123456701;
     UsageCategory = Lists;
 
     layout
