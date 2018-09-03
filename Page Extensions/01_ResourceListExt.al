@@ -21,17 +21,13 @@ pageextension 123456701 "CSD ResourceListExt" extends "Resource List"
         }
     }
 
-    actions
-    {
-        // Add changes to page actions here
-    }
-
     trigger OnOpenPage();
     begin
         ShowMaxField := true;
+        ShowType := true;
         rec.FilterGroup(3);
-        ShowType := (Getfilter(Type) = '');
-        ShowMaxField := (GetFilter(Type) = format(Type::Machine));
+        ShowType := (Getfilter(Type)='');
+        ShowMaxField := (GetFilter(Type)=format(Type::Machine));
         rec.FilterGroup(0);
     end;
 
