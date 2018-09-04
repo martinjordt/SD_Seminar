@@ -25,7 +25,7 @@ page 123456701 "Seminar Card"
                 { }
                 field("Search Name"; "Search Name")
                 { }
-                field("Seminar Duration"; "Seminar Dutarion")
+                field("Seminar Duration"; "Seminar Duration")
                 { }
                 field("Minimum Participants"; "Minimum Participants")
                 { }

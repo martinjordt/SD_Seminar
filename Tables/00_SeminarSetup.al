@@ -15,7 +15,7 @@ table 123456700 "CSD Seminar Setup"
             Caption = 'Seminar Nos.';
             TableRelation = "No. Series";
         }
-        field(30;"Seminat Registration Nos.";Code[20])
+        field(30;"Seminar Registration Nos.";Code[20])
         {
             Caption = 'Seminar Registration Nos.';
             TableRelation = "No. Series";

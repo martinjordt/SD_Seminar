@@ -28,7 +28,7 @@ table 123456701 "CSD Seminar"
                     "Search Name" := name;
             end;
         }
-        field(30; "Seminar Dutarion"; Decimal)
+        field(30; "Seminar Duration"; Decimal)
         {
             Caption = 'Seminar Duration';
             DecimalPlaces = 0 : 1;

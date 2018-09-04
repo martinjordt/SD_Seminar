@@ -21,7 +21,7 @@ page 123456702 "CSD Seminar List"
                 field(Name; Name)
                 {
                 }
-                field("Seminar Dutarion"; "Seminar Dutarion")
+                field("Seminar Dutarion"; "Seminar Duration")
                 {
                 }
                 field("Seminar Price"; "Seminar Price")
