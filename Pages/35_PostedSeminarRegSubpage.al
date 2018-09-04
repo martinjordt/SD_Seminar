@@ -1,14 +1,14 @@
-page 123456711 "CSD Seminar Reg. Subpage"
+page 123456735  "CSD Post Seminar Reg. Subpage"
 {
     // CSD1.00 - 2018-01-01 - D. E. Veloper
-    //   Chapter 6 - Lab 3
+    //   Chapter 7 - Lab 3
     //     - Created new page
 
-    Caption = 'Lines';
+    AutoSplitKey = true;
+    Caption = 'Posted Lines';
     DelayedInsert = true;
     PageType = ListPart;
-    SourceTable = "CSD Seminar Registration Line";
-    AutoSplitKey = true;
+    SourceTable = "CSD Posted Seminar Reg. Line";
 
     layout
     {
