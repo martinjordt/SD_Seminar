@@ -59,7 +59,7 @@ page 123456710 "CSD Seminar Registration"
                 {
                 }
             }
-            part(SeminarRegistrationLines; "CSD Seminar Reg. Subpage")
+            part(SeminarRegistrationLines; "Seminar Reg. Subpage")
             {
                 Caption = 'Lines';
                 SubPageLink = "Document No." = field ("No.");
@@ -138,7 +138,7 @@ page 123456710 "CSD Seminar Registration"
                     Image = Comment;
                     RunObject = Page 123456706;
                     RunPageLink = "No." = Field ("No.");
-                    RunPageView = where ("Table Name" = const("Seminar Registration Header"));
+                    RunPageView = where ("Table Name" = const("Seminar Registration"));
                 }
                 action("&Charges")
                 {
@@ -161,6 +161,20 @@ page 123456710 "CSD Seminar Registration"
                 ShortcutKey = F9;
                 RunObject = codeunit "CSD Seminar-Post (Yes/No)";
             }
+            action("&Print")
+            {
+                Caption = '&Print';
+                Image = Print;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                trigger OnAction();
+                var
+                    SeminarReportSelection : Record "CSD Seminar Report Selections";
+                begin
+                    SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration,Rec);
+                end;
+            }            
         }
     }
 }
