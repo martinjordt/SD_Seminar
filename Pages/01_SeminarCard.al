@@ -1,4 +1,4 @@
-page 123456701 "Seminar Card"
+page 123456701 "CSD Seminar Card"
 // Lab 5.2
 // Task 5
 {

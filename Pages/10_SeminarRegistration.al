@@ -59,7 +59,7 @@ page 123456710 "CSD Seminar Registration"
                 {
                 }
             }
-            part(SeminarRegistrationLines; "Seminar Reg. Subpage")
+            part(SeminarRegistrationLines; "CSD Seminar Reg. Subpage")
             {
                 Caption = 'Lines';
                 SubPageLink = "Document No." = field ("No.");
@@ -138,7 +138,7 @@ page 123456710 "CSD Seminar Registration"
                     Image = Comment;
                     RunObject = Page 123456706;
                     RunPageLink = "No." = Field ("No.");
-                    RunPageView = where ("Table Name" = const("Seminar Registration"));
+                    RunPageView = where ("Table Name" = const("Seminar Registration Header"));
                 }
                 action("&Charges")
                 {
