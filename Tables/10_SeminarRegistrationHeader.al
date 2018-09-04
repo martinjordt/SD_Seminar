@@ -321,8 +321,8 @@ table 123456710 "CSD Seminar Reg. Header"
 
     trigger OnDelete();
     begin
-        IF (CurrFieldNo > 0) then
-            TestField(Status,STATUS::Canceled);
+        IF(CurrFieldNo > 0) then
+            TestField(Status, STATUS::Canceled);
 
         SeminarRegLine.RESET;
         SeminarRegLine.SETRANGE("Document No.", "No.");
@@ -355,6 +355,10 @@ table 123456710 "CSD Seminar Reg. Header"
             NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
         end;
         InitRecord;
+
+        if GetFilter("Seminar No.") <> '' then
+            if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") then
+                validate("Seminar No.", GetRangeMin("Seminar No."));
     end;
 
     local procedure InitRecord();
