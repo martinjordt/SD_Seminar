@@ -157,7 +157,6 @@ page 123456734  "CSD Posted Seminar Reg."
                     Navigate.Run;                    
                 end;
             }
-
         }
     }
 }

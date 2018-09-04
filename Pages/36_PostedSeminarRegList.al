@@ -82,6 +82,24 @@ page 123456736  "CSD Posted Seminar Reg. List"
                 }
             }
         }
+        area(Processing)
+        {
+            action("Navigate")
+            {
+                caption = 'Navigate';
+                Image = Navigate;
+                Promoted = true;
+                PromotedCategory = Process;
+
+                trigger OnAction();
+                var
+                    Navigate : Page Navigate;
+                begin
+                    Navigate.SetDoc("Posting Date","no.");
+                    Navigate.Run;                    
+                end;
+            }
+        }
     }
 }
 
